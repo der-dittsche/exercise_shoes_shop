@@ -1,0 +1,78 @@
+:root {
+  --bg-main: hsl(0, 0%, 89%);
+  --bg-content-box: rgb(255, 255, 255);
+  --bg-add-button: rgb(66, 66, 202);
+}
+
+html {
+  background-color: var(--bg-main);
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-content-box);
+  width: 30%;
+  border: 1px solid red;
+  border-radius: 5%;
+  padding: 1em;
+}
+
+.content-box img {
+  width: 100%;
+}
+
+.content-details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "size quantity"
+    "shcolor shcolor"
+    "addbutton addbutton";
+  background-color: var(--bg-main);
+  padding: 1em;
+}
+
+.header {
+  grid-area: header;
+}
+
+.pricebtn {
+  background-color: var(--bg-content-box);
+  border-radius: 0.3em;
+  width: 100%;
+}
+
+.size {
+  grid-area: size;
+}
+
+.quantity {
+  grid-area: quantity;
+}
+
+.color {
+  grid-area: shcolor;
+}
+
+.addbutton {
+  grid-area: addbutton;
+}
+
+button {
+  width: 100%;
+  border-radius: 0.3em;
+  background-color: var(--bg-add-button);
+  color: var(--bg-content-box);
+  border: 0;
+}
