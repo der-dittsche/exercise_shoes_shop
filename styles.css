@@ -37,10 +37,18 @@ html {
   margin-top: 2em;
 }
 
-.content-box img {
+.content-header {
+  width: 100%;
+  height: auto;
+}
+.content-header img {
   width: 100%;
   border-radius: 1.5em 1.5em 0 0;
-  _opacity: 0.7;
+}
+
+.content-ima {
+  border-radius: 1.6em 1.6em 0 0;
+  background-image: linear-gradient(transparent 50%, blue 100%);
 }
 
 .content-text {
